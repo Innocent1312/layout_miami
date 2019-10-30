@@ -42,11 +42,11 @@
   background-position: center; }
 
 .header {
-  height: 765px;
+  position: relative;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
+  height: 765px;
   font-weight: 400;
   line-height: 1; }
   .header__nav {
@@ -55,13 +55,13 @@
     left: 0;
     right: 0; }
   .header__top {
-    position: absolute;
-    top: 35px;
-    left: calc(50% - 57.5px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: white; }
+    color: white;
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 57.5px); }
   .header__phone {
     margin: 0 82px; }
   .header__phone, .header__action {

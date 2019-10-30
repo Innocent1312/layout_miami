@@ -9,8 +9,8 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h6,
+h5 {
   margin: 0;
   padding: 0;
   border-width: 0;
@@ -39,9 +39,9 @@ textarea {
     color: #2f80ed; }
 
 .section {
-  padding: 100px calc(50% - 470px);
+  background-color: white;
   position: relative;
-  background-color: white; }
+  padding: 100px calc(50% - 470px); }
   .section:nth-child(even) {
     background-color: #eee; }
   .section__content {
@@ -91,15 +91,15 @@ textarea {
 
 .button {
   display: block;
-  font-size: 14px;
-  text-transform: uppercase;
-  line-height: 1;
-  color: white;
   background-color: #00aaef;
   cursor: pointer;
+  padding: 19px 62px;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
   -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-  padding: 19px 62px; }
+  transition: background-color 0.2s; }
   .button:hover {
     background-color: #2f80ed; }
 
@@ -186,11 +186,11 @@ textarea {
   background-position: center; }
 
 .header {
-  height: 765px;
+  position: relative;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
+  height: 765px;
   font-weight: 400;
   line-height: 1; }
   .header__nav {
@@ -199,13 +199,13 @@ textarea {
     left: 0;
     right: 0; }
   .header__top {
-    position: absolute;
-    top: 35px;
-    left: calc(50% - 57.5px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: white; }
+    color: white;
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 57.5px); }
   .header__phone {
     margin: 0 82px; }
   .header__phone, .header__action {
@@ -238,8 +238,8 @@ textarea {
           justify-content: space-between; }
   .info__heading {
     width: 314px;
-    font-weight: 300;
     font-size: 48px;
+    font-weight: 300;
     line-height: 60px;
     text-transform: uppercase; }
   .info__text {
@@ -319,26 +319,26 @@ textarea {
     height: 150px;
     border-radius: 50%; }
   .person__name {
-    margin-top: 12px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-top: 12px; }
   .person__position {
-    margin: 0;
     color: #696973;
-    font-style: italic; }
+    font-style: italic;
+    margin: 0; }
   .person__text {
     position: relative; }
     .person__text::after {
       content: "";
       display: block;
       position: absolute;
+      right: calc(100% + 6px);
+      bottom: calc(100% + 6px);
       width: 40px;
       height: 33px;
       background-image: url("../images/quotes.svg");
       background-size: contain;
-      background-repeat: no-repeat;
       background-position: center;
-      right: calc(100% + 6px);
-      bottom: calc(100% + 6px); }
+      background-repeat: no-repeat; }
 
 .testimonials {
   display: grid;
@@ -375,14 +375,14 @@ textarea {
       width: 100%; } }
 
 .footer {
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
   height: 540px;
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  z-index: -1;
-  background-image: url("../images/footer.jpg");
-  background-size: cover;
-  background-position: center; }
+  z-index: -1; }
   .footer__logo {
     position: absolute;
     bottom: 95px;
