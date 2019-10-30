@@ -11,7 +11,8 @@
     list-style-type: none; }
   .nav__item {
     padding: 7px 20px;
-    margin: 0 22.5px;
+    margin-left: 23px;
+    margin-right: 23px;
     border-radius: 10px; }
     .nav__item--active {
       background-color: #d5c5aa; }
